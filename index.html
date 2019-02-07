@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Write a description of your site here">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Train-Scheduler</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Linking Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab|Yellowtail' rel='stylesheet' type='text/css'>
+	<!-- Linking CSS -->
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Linking jQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	 <!-- Link to Moment.js -->
+	 <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<!-- styles local to this page-->
+
+</head>
+
+<body>
+
+<div class="container">	
+
+	<div class="header">
+		<h1>Anytime is Train Time</h1>
+		<h3>A Train Schedule Management Application</h3>
+	</div>
+
+
+<!-- ================================================================ -->
+
+<div class="row">
+	<div class="col-md-12">
+	  <!-- Add Train  -->
+	  <div class="card mb-4">
+		<div class="card-header">Add Train</div>
+		<div class="card-body">
+
+		  <!-- Entry Form -->
+		  <form>
+			<div class="form-group">
+			  <label for="train-name-input">Train Name</label>
+			  <input class="form-control" id="train-name-input" placeholder="" type="text">
+			</div>
+			<div class="form-group">
+			  <label for="destination-input">Destination</label>
+			  <input class="form-control" id="destination-input" placeholder="" type="text">
+			</div>
+			<div class="form-group">
+			  <label for="time-input">First Train Time (military time, ex. "0600" hrs)</label>
+			  <input class="form-control" id="time-input" placeholder="" type="text">
+			</div>
+			<div class="form-group">
+			  <label for="frequency-input">Frequency (min)</label>
+			  <input class="form-control" id="frequency-input" placeholder="" type="text">
+			</div>
+			<button class="btn btn-primary float-right" id="add-train-btn">Submit</button>
+		  </form>
+
+		</div>
+	  </div>
+	</div>
+	</div>
+	
+	<!-- ================================================================ -->
+
+	<div class="row">
+		<div class="col-md-12">
+		  <!-- Current Train -->
+		  <div class="card mb-4">
+			<div class="card-header">Current Train Schedule</div>
+			<div class="card-body">
+			  <table class="table table-sm table-hover" id='train-table'>
+				<thead>
+					<tr>
+						<th colspan="5" style="border:0px solid red; text-align:center; background-color:cornsilk;" >Current Time:<span id="current-time"></span></th>
+					</tr>
+				  <tr>
+					<th scope="col">Train Name</th>
+					<th scope="col">Destination</th>
+					<th scope="col">Frequency (min)</th>
+					<th scope="col">Next Arrival</th>
+					<th scope="col">Minutes Away</th>
+				  </tr>
+				</thead>
+				<tbody class="tbody">
+				</tbody>
+			  </table>
+			</div>
+		  </div>
+		</div>
+	  </div>
+<!-- ================================================================ -->
+
+</div>
+
+
+<!-- ================================================================ -->
+
+	<!-- JS, Popper.js, and jQuery (fancy Bootstrap) -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+	<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+
+	<script type="text/javascript" src="script.js"></script>
+	
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

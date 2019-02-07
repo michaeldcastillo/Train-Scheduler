@@ -1,0 +1,89 @@
+html *
+		{
+			border:0px dotted silver;
+			padding:5px 5px 5px 5px;
+		}
+
+		body
+		{
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:18px;
+			background-color:#ededed;
+		}
+
+		.row
+		{
+			border:0px solid red;
+		}
+
+		#employee-table th, #employee-table td 
+		{
+			display: inline-block;
+			/* width: 16.575%; fits 6 columns */
+			width: 20%;
+		}
+
+		thead
+		{
+			font-weight:bold;
+			background-color:#dddddd;
+		}
+
+		.tbody
+		{
+			background-color:white;
+		}
+
+		.header
+		{
+			background-color:#A4D3EE;
+			/*color:white;*/
+			text-align:center;
+			margin:10px 10px 10px 10px;
+			padding:10px 10px 10px 10px;
+		}
+
+		h1
+		{
+			font-size:36px;
+			font-weight:bold;
+		}
+
+		h3
+		{
+			font-size:24px;
+		}
+
+		.card-header
+		{ 
+			background-color:#4682B4;
+			color:white;
+			border:2px solid #4682B4;
+		}
+
+		.card-body
+		{
+			border:2px solid #4682B4;
+			background-color:#ededed;
+		}
+
+		input[type=text] 
+		{
+			font-weight:bold;
+			border:1px solid silver;
+			/*border-style:inset;*/	
+		}
+
+		input[type=text]:focus 
+		{
+			border:2px solid green;
+			background-color:cornsilk;
+			color:green;
+		}
+
+		input[type=text]::placeholder 
+		{
+			color: silver;
+			opacity: 1; /* Firefox */
+			font-weight:normal;
+		}
